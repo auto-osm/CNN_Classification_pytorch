@@ -35,14 +35,14 @@ def generate_single_on_discovery(idx, data_name):		# northeastern discovery clus
 	cmd += "\n#number of nodes to distribute n tasks across"
 	cmd += "\n#################"
 	cmd += "\n"
-	cmd += "\npython ./main.py"
+	cmd += "\npython ./train_cnn.py"
 	
 	fin = open('execute_combined.bash','w')
 	fin.write(cmd)
 	fin.close()
 
 
-run_num = 2
+run_num = 5
 data_name = 'cnn_test'
 
 for idx in range(run_num):
